@@ -127,7 +127,7 @@ ApplicationWindow {
         SButton {
           span: 1;
           style: "left btn-naked text-on-primary";
-          icon: Fa.Icon.bars;
+          iconSource: Fa.Icon.bars;
           onClicked: drawer.open();
         }
 
@@ -139,7 +139,7 @@ ApplicationWindow {
         SButton {
           span: 1;
           style: "right btn-naked text-on-primary";
-          icon: Fa.Icon.info_circle;
+          iconSource: Fa.Icon.info_circle;
           onClicked: aboutModal.open();
         }
       }
@@ -195,7 +195,6 @@ ApplicationWindow {
 
     SContainer {
       style: "padding-zero";
-      anchors.bottom: parent.bottom;
       Rectangle {
         anchors.fill: parent;
         color: STheme.gray_dark;
@@ -211,7 +210,7 @@ ApplicationWindow {
             SButton {
               id: previousButton;
               style: "left btn-naked text-on-primary lg";
-              icon: Fa.Icon.chevron_left;
+              iconSource: Fa.Icon.chevron_left;
               onClicked: screen = animationContainer.previous();
             }
             SText {
@@ -234,7 +233,7 @@ ApplicationWindow {
             SButton {
               id: nextButton;
               style: "right btn-naked text-on-primary lg";
-              icon: Fa.Icon.chevron_right;
+              iconSource: Fa.Icon.chevron_right;
               onClicked: screen = animationContainer.next();
             }
           }
@@ -271,7 +270,7 @@ ApplicationWindow {
 
       SButton {
         style: "btn-outline-info";
-        icon: Fa.Icon.github;
+        iconSource: Fa.Icon.github;
         text: "Fork on Github";
         onClicked: Qt.openUrlExternally("https://github.com/StratifyLabs/StratifyQML");
       }
