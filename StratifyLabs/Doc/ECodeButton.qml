@@ -6,7 +6,7 @@ SButton {
   property string source;
   style: "btn-outline-success lg block";
   text: "View Code";
-  icon: Fa.Icon.code;
+  iconSource: Fa.Icon.code;
   onClicked: {
     showCode(source);
   }
