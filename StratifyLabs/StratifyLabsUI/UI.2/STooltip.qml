@@ -16,7 +16,7 @@ Copyright 2016 Tyler Gilbert
 
 import QtQuick 2.6
 import QtQuick.Window 2.2
-import QtQuick.Controls 2.1
+import QtQuick.Controls 2.4
 import StratifyLabs.UI 2.0
 
 ToolTip {
