@@ -284,7 +284,7 @@ ApplicationWindow {
   Component.onCompleted: {
     STheme.brand_primary = "#244E99";
     STheme.brand_secondary = "#383838";
-    screen = "Charts";
+    screen = "Introduction";
     STheme.updateScreenSize(width);
   }
 
