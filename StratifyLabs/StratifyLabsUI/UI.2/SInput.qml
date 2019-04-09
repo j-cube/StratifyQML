@@ -26,7 +26,7 @@ TextField {
     property alias attr: attr;
     property alias placeholder: control.placeholderText;
 
-    implicitWidth: contentItem.implicitWidth + attr.paddingHorizontal*2;
+    implicitWidth: contentWidth.implicitWidth + attr.paddingHorizontal*2;
     implicitHeight: attr.fontContainerHeight;
 
     font.family: attr.fontText;
