@@ -167,6 +167,25 @@ SSizeAttributes {
                 } else if(type !== "badge"){
                     radius = Qt.binding(function(){ return STheme.border_radius_large; });
                 }
+            } else if( items[i] === "xlg" ){
+                fontSize = Qt.binding( function(){
+                    return STheme.font_size_large * 2;
+                });
+                paddingVertical = Qt.binding( function() {
+                    return STheme.padding_large_vertical * 2;
+                });
+                paddingHorizontal = Qt.binding( function() {
+                    return STheme.padding_large_horizontal;
+                });
+                if( type === "button" ){
+                    radius = Qt.binding(function(){
+                        return STheme.btn_border_radius_large * 2;
+                    });
+                } else if(type !== "badge"){
+                    radius = Qt.binding(function(){
+                        return STheme.border_radius_large * 2;
+                    });
+                }
             } else if( items[i] === "sm" ){
                 fontSize = Qt.binding( function() { return STheme.font_size_small; });
                 paddingVertical = Qt.binding( function() { return STheme.padding_small_vertical; });
